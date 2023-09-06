@@ -1,0 +1,115 @@
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-section,
+.social-media-section {
+  margin-bottom: 30px;
+}
+
+.login-section h1,
+.social-media-section h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.login-section button {
+  display: block;
+  width: 230px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 25px;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #fff;
+}
+.login-section button:active {
+  transform: scale(0.96);
+}
+
+.login-section button p {
+  margin-left: 10px;
+}
+
+.right-nav-google-button {
+  border: 1px solid lightseagreen;
+  color: lightseagreen;
+}
+
+.right-nav-github-button {
+  color: #403f3f;
+  border: 1px solid #403f3f;
+}
+
+.social-media-section ul li {
+  border: 1px solid #403f3f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  list-style: none;
+  width: 230px;
+  display: flex;
+  align-items: center;
+}
+
+.social-media-section ul li span {
+  margin-left: 20px;
+}
+
+.social-media-section ul li p {
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.q-zone {
+  margin: 30px;
+  background-color: #f3f3f3;
+  padding: 20px 10px;
+}
+
+.right-nav-adv {
+  background-image: url("../../../assets/images/bg1.png");
+  width: 270px;
+  height: 510px;
+}
+
+.adv-title {
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.adv-title h2 {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.adv-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.adv-subtitle p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.adv-button {
+  color: #fff;
+  font-weight: 600;
+  background-color: #d72050;
+  padding: 15px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
