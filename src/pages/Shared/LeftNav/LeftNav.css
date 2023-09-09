@@ -22,3 +22,6 @@
   font-weight: 600;
   color: #403f3f;
 }
+.category-section ul li a:hover {
+  text-decoration: underline;
+}

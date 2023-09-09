@@ -1,0 +1,7 @@
+.newsLayout-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 10px;
+  width: 85%;
+  margin: 50px auto;
+}

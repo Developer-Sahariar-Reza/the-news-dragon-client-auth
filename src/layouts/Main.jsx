@@ -4,6 +4,7 @@ import Footer from "../pages/Shared/Footer/Footer";
 import "./Main.css";
 import LeftNav from "../pages/Shared/LeftNav/LeftNav";
 import RightNav from "../pages/Shared/RightNav/RightNav";
+import { Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -14,7 +15,7 @@ const Main = () => {
           <LeftNav />
         </div>
         <div>
-          <h1>Main Content Coming.....</h1>
+          <Outlet />
         </div>
         <div>
           <RightNav />
