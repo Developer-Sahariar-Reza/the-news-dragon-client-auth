@@ -1,7 +1,7 @@
 .news-card {
   margin-bottom: 30px;
   width: 560px;
-  height: 730px;
+  height: auto;
   border: 1px solid #e7e7e7;
 }
 .news-card header {
@@ -44,8 +44,6 @@
   margin-right: 8px;
   cursor: pointer;
 }
-.news-card main {
-}
 .news-card main h2 {
   font-size: 20px;
   font-weight: 700;
@@ -72,4 +70,34 @@
 .read-more {
   color: #ff8c47;
   font-weight: 600;
+}
+hr {
+  width: 90%;
+  border-width: 2px;
+  background-color: #706f6f;
+  margin: 0 auto;
+}
+.news-card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-icon {
+  font-size: 24px;
+  font-weight: 600;
+  color: #403f3f;
+  margin-right: 10px;
+}
+.viewer {
+  font-size: 16px;
+  font-weight: 500;
+}
+.rating-color {
+  color: #ff8c47;
 }

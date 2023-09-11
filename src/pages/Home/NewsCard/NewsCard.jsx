@@ -1,10 +1,17 @@
 import React from "react";
 import "./NewsCard.css";
-import { FaRegBookmark, FaShareNodes } from "react-icons/fa6";
+import {
+  FaRegBookmark,
+  FaShareNodes,
+  FaEye,
+  FaRegStar,
+  FaStar,
+} from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import Rating from "react-rating";
 
 const NewsCard = ({ news }) => {
-  const { _id, title, details, author, image_url, rating } = news;
+  const { _id, title, details, author, image_url, rating, total_view } = news;
   return (
     <div className="news-card">
       <header>
@@ -48,7 +55,24 @@ const NewsCard = ({ news }) => {
           </p>
         </div>
       </main>
-      <footer></footer>
+      <hr />
+      <footer>
+        <div>
+          <Rating
+            placeholderRating={rating.number}
+            emptySymbol={<FaRegStar />}
+            placeholderSymbol={<FaStar />}
+            fullSymbol={<FaStar />}
+            className="rating-color"
+          />
+        </div>
+        <div className="view-container">
+          <span className="view-icon">
+            <FaEye />
+          </span>
+          <span className="viewer">{total_view}</span>
+        </div>
+      </footer>
     </div>
   );
 };
