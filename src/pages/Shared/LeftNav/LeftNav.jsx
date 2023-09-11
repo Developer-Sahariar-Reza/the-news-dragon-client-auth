@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./LeftNav.css";
 import { Link } from "react-router-dom";
+import { FaCalendar } from "react-icons/fa6";
+import editor1 from "../../../assets/images/editorsInsight1.png";
+import editor2 from "../../../assets/images/editorsInsight2.png";
 
 const LeftNav = () => {
   const [categories, setCategories] = useState([]);
@@ -21,6 +24,54 @@ const LeftNav = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="editor-insight-container">
+        <h1>Editor's Insight</h1>
+
+        <div className="left-nav-editor-card-contianer">
+          <div>
+            <div>
+              <img src={editor1} alt="" />
+            </div>
+            <div>
+              <h4>21 The Most Stylish Wedding Guest Dresses For Spring</h4>
+              <div>
+                <span>
+                  <FaCalendar />
+                </span>
+                <span>Jan 4, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src={editor2} alt="" />
+            </div>
+            <div>
+              <h4>21 The Most Stylish Wedding Guest Dresses For Spring</h4>
+              <div>
+                <span>
+                  <FaCalendar />
+                </span>
+                <span>Jan 4, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src={editor1} alt="" />
+            </div>
+            <div>
+              <h4>21 The Most Stylish Wedding Guest Dresses For Spring</h4>
+              <div>
+                <span>
+                  <FaCalendar />
+                </span>
+                <span>Jan 4, 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -64,6 +64,7 @@ const NewsCard = ({ news }) => {
             placeholderSymbol={<FaStar />}
             fullSymbol={<FaStar />}
             className="rating-color"
+            readonly
           />
         </div>
         <div className="view-container">
