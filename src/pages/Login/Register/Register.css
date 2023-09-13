@@ -1,0 +1,11 @@
+.register-container {
+  margin: 100px auto;
+  width: 75%;
+  height: auto;
+}
+.register-container h2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: center;
+}
