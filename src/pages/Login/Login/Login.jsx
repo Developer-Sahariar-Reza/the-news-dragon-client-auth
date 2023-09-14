@@ -1,12 +1,13 @@
 import React, { useContext, useState } from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
 import toast from "react-hot-toast";
 
 const Login = () => {
-  const [error, setError] = useState("");
   const { signInUser } = useContext(AuthContext);
+
+  const navigate = useNavigate();
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -19,6 +20,7 @@ const Login = () => {
       .then((result) => {
         const loggedUser = result.user;
         toast.success("Login Successful");
+        navigate("/category/0");
       })
       .catch((error) => {
         const errorMessage = error.message;
