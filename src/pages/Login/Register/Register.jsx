@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Register.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  const [accepted, setAccepted] = useState(false);
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -24,6 +25,10 @@ const Register = () => {
         const errorMessage = error.message;
         console.log(errorMessage);
       });
+  };
+
+  const handleAccepted = (event) => {
+    setAccepted(event.target.checked);
   };
 
   return (
@@ -64,8 +69,23 @@ const Register = () => {
           />
         </div>
 
+        <div className="terms-condition">
+          <input
+            type="checkbox"
+            name="accept"
+            id=""
+            value="accept"
+            onClick={handleAccepted}
+          />
+          <span>
+            Accept <Link to="/terms">Terms and Conditions</Link>
+          </span>
+        </div>
+
         <div>
-          <button className="common-button">Register</button>
+          <button className="common-button" disabled={!accepted}>
+            Register
+          </button>
         </div>
 
         <p className="login-text">

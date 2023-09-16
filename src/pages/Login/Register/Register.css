@@ -9,3 +9,12 @@
   margin-bottom: 50px;
   text-align: center;
 }
+
+.terms-condition {
+  margin: 20px 0;
+}
+
+.terms-condition input {
+  display: inline;
+  width: 5%;
+}
